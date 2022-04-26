@@ -3,6 +3,11 @@ import './App.css';
 
 import "./main.css";
 
+import cj from './PortfolioPics/cj.png'
+import gw from "./PortfolioPics/gw.png";
+import hh from "./PortfolioPics/hh.png";
+import pj from "./PortfolioPics/pj.png";
+
 
 
 function App() {
@@ -26,14 +31,9 @@ function App() {
 
             <h3>Software Engineer</h3>
 
-            <h4>About Me</h4>
+            <h5>About Me</h5>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn't anything embarrassing
-              hidden in the middle of text.
+              I am a very driven and problem-solving focused person. One of my mottos in life is that time only moves forward and, in trying to live by that statement, I like to keep my eyes ahead and figure out what's the plan for the next best thing after the next best thing. With all the tools and skills I've aquired as a coder, I am  always ready and willing to tackle the pressing needs of clients and users. When I'm not working on code, you can find usually me sketching, nerding out over some obscure superhero trivia, or burnng my latest expiremental concoction at dinner.
             </p>
 
             <div className="socialGroup">
@@ -115,72 +115,81 @@ function App() {
         <h1 className="topic">Projects</h1>
         <div className="projects-container">
           <div className="project">
-            <img src="https://picsum.photos/seed/picsum/200/300" />
+            <img src={gw} />
+
             <h4>Gateway</h4>
 
             <button className="gitButton">
-              <a href="">See Github</a>
+              <a href="https://HeartfeltVerticalSandbox.chiomaonukogu.repl.co">
+                See Website
+              </a>
             </button>
 
             <button className="siteButton">
-              <a href="">See Website</a>
+              <a href="">See Github</a>
             </button>
           </div>
 
           <div className="project">
-            <img src="https://picsum.photos/seed/picsum/200/300" />
-            <h4>Gateway</h4>
+            <img src={hh} />
+
+            <h4>HopeHacks</h4>
 
             <button className="gitButton">
-              <a href="">See Github</a>
+              <a href="https://edwine97.github.io/hopehacks-g3/index.html">
+                See Website
+              </a>
             </button>
 
             <button className="siteButton">
-              <a href="">See Website</a>
+              <a href="">See Github</a>
             </button>
           </div>
 
           <div className="project">
-            <img src="https://picsum.photos/seed/picsum/200/300" />
-            <h4>Gateway</h4>
+            <img src={cj} />
+            <h4>Code For Justice</h4>
 
             <button className="gitButton">
-              <a href="">See Github</a>
+              <a href="https://htmlpreview.github.io/?https://github.com/Emilyleonella/CodeJustice_/blob/Chioma/index.html">
+                See Website
+              </a>
             </button>
 
             <button className="siteButton">
-              <a href="">See Website</a>
+              <a href="">See Github</a>
             </button>
           </div>
 
           <div className="project">
-            <img src="https://picsum.photos/seed/picsum/200/300" />
-            <h4>Gateway</h4>
+            <img src={hh} />
+            <h4>eCommerce</h4>
 
             <button className="gitButton">
-              <a href="">See Github</a>
+              <a href="https://aadabraids.herokuapp.com/">See Website</a>
             </button>
 
             <button className="siteButton">
-              <a href="">See Website</a>
+              <a href="">See Github</a>
             </button>
           </div>
 
           <div className="project">
-            <img src="https://picsum.photos/seed/picsum/200/300" />
-            <h4>Gateway</h4>
+            <img src={pj} />
+            <h4>Redesign</h4>
 
             <button className="gitButton">
-              <a href="">See Github</a>
+              <a href="https://pj-project.herokuapp.com/">See Website</a>
             </button>
 
             <button className="siteButton">
-              <a href="">See Website</a>
+              <a href="">See Github</a>
             </button>
           </div>
         </div>
+         <p className="copyR">Copyright &copy; 2021, Chioma O Onukogu</p>
       </a>
-      <p className="copyR">Copyright &copy; 2021, Chioma O Onukogu</p>
+     
     </>
   );
 }
