@@ -1,0 +1,294 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100vh;
+  background-color: grey;
+  display: flex;
+    flex-direction: column;
+}
+
+h1.topic{
+    text-align: center;
+}
+
+div.projects-container
+{
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 2em;
+   
+     
+}
+
+div.project
+{
+    position: relative;
+    height: 35%;
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    /* background-color: rgb(255, 0, 0, 0.5); */
+    overflow: hidden;
+        background-color: rgb(255, 0, 0);
+}
+
+ .project img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s all ease-in-out;
+        opacity: 0.5; 
+    }
+       
+    .project:hover img {
+        transform: scale(1.5);
+        opacity: 1;
+        
+    }
+
+button.gitButton, button.siteButton 
+{
+    /* width: 10vh; */
+    height: 3vh; 
+ 
+    border-radius: 1em;
+    position: absolute;
+    font-size: 2vh;
+    border: none;
+    opacity: 0;
+}
+
+a{ text-decoration: none;}
+
+button.gitButton
+{
+   bottom: 5%;
+   padding-left: 3%;
+    padding-right: 3%;
+       /* opacity: 0; */
+}
+
+button.siteButton 
+{
+   bottom: 11%;
+    margin-bottom: 2vh;
+    padding-left: 3%;
+    padding-right: 3%;
+       /* opacity: 0; */
+}
+
+
+div.project h4
+{
+ position: absolute;
+top:5%;
+font-size: 4vh;
+opacity: 1;
+}
+
+div.project:hover > h4
+{
+opacity: 0;
+}
+
+div.project:hover >button.gitButton, div.project:hover > button.siteButton 
+{
+opacity: 1;
+}
+
+button.gitButton:hover, button.siteButton:hover
+{
+    background-color: blue;
+} 
+
+div.skills-container
+{
+     width: 90vw;
+    height: 90vh;
+    background-color: gray;
+   margin: auto;
+   position: relative;
+   
+}
+
+div.frontend
+{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    font-size: 2vw;
+    z-index: 15;
+}
+
+div.frontend h1
+{
+    position: relative;
+    left: 15%;
+     padding-top: 3vw;
+}
+
+div.list p
+{/*
+    display: flex;
+    flex-direction: column;*/
+    position: relative; 
+    left: 15%;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    font-size: 3vw;
+    left: 15%;
+}
+
+div.backend
+{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left:50%;
+    top:0%;
+    font-size: 2vw;
+    color: white;
+    z-index: 10;
+    
+}
+
+div.backend h1
+{
+    position: relative;
+    text-align: end;
+    right: 15%;
+    padding-top: 4vw;
+}
+
+div.list2 p
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* position: absolute; */
+    /* right: 15%; */
+    padding-bottom: 4%;
+    padding-top: 2%;
+    font-size: 3vw; 
+    right: 15%;
+    position: relative;
+    /* right:-50%; */
+    text-align: end;
+}
+
+div.tools
+{
+     background-color: blue;
+    width: 40%;
+    height: 46%;
+    z-index: 20;
+    position: relative;
+    top: 35%;
+    left: 30%;
+    text-align: center;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+div.tools p
+{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    /* right: 15%; */
+    padding-bottom: 4%;
+    padding-top: 2%;
+    font-size: 2vw; 
+    position: relative;
+    /* right:-50%; */
+    /* text-align: center; */
+    align-items: center;
+}
+
+div.about-container
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;;
+}
+
+div.aboutMe
+{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    font-size: 4vh;
+}
+
+div.socialGroup
+{
+   position: relative;
+   bottom: 25%;
+}
+
+div.socialGroup a
+{
+   color: white;
+   text-decoration: none;
+   padding-right: 2vw;
+}
+
+div.about-container img
+{ width: 35%;
+    height: 75%;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    font-size: 4vh;}
+
+    div.aboutMe p
+{
+    width: 100%;
+    height: 50%;
+    font-size: 2vh;
+}
+
+nav
+{
+text-decoration: none;
+font-size: 3vw;
+float:right;
+padding-top: 1.5vh;
+}
+
+nav a
+{
+padding-right: 3vw;
+color: white;
+}
+
+p.copyR
+{
+    text-align: center;
+    color: white;
+    padding: 1vw;
+}
